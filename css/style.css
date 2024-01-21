@@ -2,7 +2,7 @@
 :root {
     --primary: #9ACFDC;
     --light: #EFF5FF;
-    --dark: #1B2C51;
+    --dark: #47579D;
 }
 
 .fw-medium {
@@ -613,4 +613,9 @@
 
 .venue {
     color: #fff;
+}
+
+.sponsors {
+    background-color: #79d4ff; 
+    color: #fff !important;
 }
