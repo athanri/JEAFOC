@@ -518,6 +518,10 @@
     color: var(--primary);
 }
 
+.social {
+    text-align: right;
+}
+
 /** Sponsors **/
 #sponsorsGold {
     background-color: #D4AF37;
