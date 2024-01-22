@@ -623,3 +623,15 @@
     background-color: #79d4ff; 
     color: #fff !important;
 }
+
+/* Responsive Behaviour */
+
+@media screen and (min-width: 480px) {
+    .paddingTop {
+      padding-top: 0px;
+    }
+}
+
+.paddingTop {
+    padding-top: 10px;
+  }
