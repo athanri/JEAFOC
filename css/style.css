@@ -634,4 +634,8 @@
 
 .paddingTop {
     padding-top: 10px;
-  }
+}
+
+.barlow {
+    font-family: 'Barlow';
+}
