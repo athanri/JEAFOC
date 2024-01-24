@@ -630,7 +630,27 @@
     .paddingTop {
       padding-top: 0px;
     }
+
+    .imageRes {
+        width: 100%;
+        height: 100%;
+    }
 }
+
+@media only screen and (min-width: 1025px) {
+    .mobile {
+        display:none !important;
+    }
+} 
+@media only screen and (max-width: 1026px) {
+    .full {
+        display:none !important;
+    }
+    .imageRes {
+        width: 65%;
+        height: 65%;
+    }
+} 
 
 .paddingTop {
     padding-top: 10px;
