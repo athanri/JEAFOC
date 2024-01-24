@@ -641,20 +641,20 @@
     .mobile {
         display:none !important;
     }
+    .paddingTop {
+        padding-top: 0em;
+    }
 } 
 @media only screen and (max-width: 1026px) {
     .full {
         display:none !important;
     }
-    .imageRes {
-        width: 65%;
-        height: 65%;
+    .paddingTop {
+        padding-top: 3em;
     }
 } 
 
-.paddingTop {
-    padding-top: 10px;
-}
+
 
 .barlow {
     font-family: 'Barlow';
