@@ -646,6 +646,10 @@
         margin-top: 0em;
     }
 
+    .marginTop {
+        margin-top: 10px;
+    }
+
     .marginLeftSP {
         margin-left: 10em !important;
     }
@@ -664,6 +668,10 @@
 
     .marginBottom {
         margin-bottom: 0em;
+    }
+
+    .marginTop {
+        margin-top: 0em;
     }
 
     .topMarginMob {
