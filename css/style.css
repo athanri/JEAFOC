@@ -641,6 +641,18 @@
     .marginBottom {
         margin-bottom: 26px;
     }
+
+    .topMarginMob {
+        margin-top: 0em;
+    }
+
+    .marginLeftSP {
+        margin-left: 10em !important;
+    }
+
+    .marginLeftSP {
+        margin-left: 2em !important;
+    }
 } 
 @media only screen and (max-width: 1026px) {
     .full {
@@ -653,8 +665,24 @@
     .marginBottom {
         margin-bottom: 0em;
     }
+
+    .topMarginMob {
+        margin-top: 2em;
+    }
+
+    .marginLeftSP {
+        margin-left: 0em;
+    }
+
+    .marginLeftSP {
+        margin-left: 0em;
+    }
 } 
 
 .barlow {
     font-family: 'Barlow';
+}
+
+.marginTopSP {
+    margin-top: 2em;
 }
