@@ -630,16 +630,12 @@
 
 /* Responsive Behaviour */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1900px) {
     .mobile {
         display:none !important;
     }
     .paddingTop {
         padding-top: 0em;
-    }
-
-    .marginBottom {
-        margin-bottom: 26px;
     }
 
     .topMarginMob {
@@ -657,21 +653,17 @@
     .marginLeftSP {
         margin-left: 2em !important;
     }
+
+    .marginBottom {
+        margin-bottom: 26px;
+    }
 } 
-@media only screen and (max-width: 1026px) {
+@media only screen and (max-width: 1901px) {
     .full {
         display:none !important;
     }
     .paddingTop {
         padding-top: 1em;
-    }
-
-    .marginBottom {
-        margin-bottom: 0em;
-    }
-
-    .marginTop {
-        margin-top: 0em;
     }
 
     .topMarginMob {
@@ -684,6 +676,10 @@
 
     .marginLeftSP {
         margin-left: 0em;
+    }
+
+    .marginTopThird {
+        margin-top: 16px !important;
     }
 } 
 
