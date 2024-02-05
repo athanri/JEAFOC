@@ -709,3 +709,28 @@
 .table {
     --bs-table-striped-bg: #91D5DE !important;
 }
+
+.img-cover{
+    object-fit: cover;
+    object-position: center;
+  }
+
+.btn.btn-primary:active {
+    background-color: #47579D !important;
+    color: #ffffff !important;
+}
+
+.btn.btn-primary:hover {
+    background-color: #47579D !important;
+    color: #ffffff !important;
+}
+
+.backgroundSpeakers {
+    background-color: #91D5DE !important;
+    color: #ffffff;
+}
+
+.btn.btn-primary {
+    background-color: #ffffff !important;
+    color: #79d4ff !important;
+}
