@@ -764,3 +764,11 @@
 .time {
     width: 15%;
 }
+
+.paddingTableLeft {
+    padding-right: 50px !important;
+}
+
+.paddingTableRight {
+    padding-left: 50px !important;
+}
