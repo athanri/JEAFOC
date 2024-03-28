@@ -1,5 +1,47 @@
-(function ($) {
-    "use strict";
+$(document).ready(function() {
+    // inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
+    $('.table-responsive-stack').each(function (i) {
+       var id = $(this).attr('id');
+       //alert(id);
+       $(this).find("th").each(function(i) {
+          $('#'+id + ' td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">' + $(this).text() + ':</span> ');
+          $('.table-responsive-stack-thead').hide();
+       });
+    });
+    
+    $( '.table-responsive-stack' ).each(function() {
+    var thCount = $(this).find("th").length; 
+        var rowGrow = 100 / thCount + '%';
+        //console.log(rowGrow);
+        $(this).find("th, td").css('flex-basis', rowGrow);   
+    });
+    
+    function flexTable(){
+        if ($(window).width() < 768) {
+        
+        $(".table-responsive-stack").each(function (i) {
+        $(this).find(".table-responsive-stack-thead").show();
+        $(this).find('thead').hide();
+        });
+        
+        
+        // window is less than 768px   
+        } else {
+        
+        
+        $(".table-responsive-stack").each(function (i) {
+        $(this).find(".table-responsive-stack-thead").hide();
+        $(this).find('thead').show();
+        });
+    }
+ // flextable   
+ }      
+  
+    flexTable();
+        
+    window.onresize = function(event) {
+        flexTable();
+    };
 
     // Spinner
     var spinner = function () {
@@ -10,8 +52,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +66,8 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -45,53 +87,13 @@
         delay: 10,
         time: 2000
     });
+ // document ready  
+ });
+ 
+ 
+ 
+ 
 
-
-    // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
-    });
-    $('.time').datetimepicker({
-        format: 'LT'
-    });
-
-
-    // Header carousel
-    $(".header-carousel").owlCarousel({
-        autoplay: false,
-        animateOut: 'fadeOutLeft',
-        items: 1,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
-        center: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            }
-        }
-    });
-})(jQuery);
+    
 
 
