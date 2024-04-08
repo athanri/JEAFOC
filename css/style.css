@@ -17,6 +17,14 @@
     font-weight: 900 !important;
 }
 
+.font {
+    color: #000000;
+}
+
+.font_reg {
+    background-color: #EDE545 !important;
+}
+
 .register {
     position: fixed;
     display: none;
